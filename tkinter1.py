@@ -6,8 +6,11 @@ def converter():
     g=float(e2_value.get())*1000
     p=float(e2_value.get())*2.20462
     o=float(e2_value.get())*35.274
+    t1.delete("1.0", END)
     t1.insert(END,g)
+    t2.delete("1.0", END)
     t2.insert(END,p)
+    t3.delete("1.0", END)
     t3.insert(END,o)
 
 l1=Label(window,text="Enter Kg")
